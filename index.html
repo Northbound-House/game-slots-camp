@@ -23,6 +23,9 @@
       body,
       #root {
         height: 100%;
+        /* The cabinet is a fixed-size stage scaled to fit — nothing here is
+           meant to scroll, on desktop or under a mobile URL bar. */
+        overflow: hidden;
       }
       body {
         margin: 0;
