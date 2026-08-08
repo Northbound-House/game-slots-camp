@@ -4,7 +4,7 @@ A hold-and-spin campsite filler. Campers pull into sites and stay put while the 
 
 Built with React + Vite. No backend, no state to persist — it's a toy.
 
-**Play:** https://seeking77degrees.github.io/campground/
+**Play:** https://northbound-house.github.io/game-slots-camp/
 
 ## The board
 
@@ -25,15 +25,7 @@ npm run dev
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages. One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-`vite.config.js` uses a relative base, so the same build works from a project-pages subpath or a custom subdomain without changes.
-
-### Custom subdomain
-
-To serve from `campground.seeking77degrees.com`:
-
-1. Add `public/CNAME` containing `campground.seeking77degrees.com`
-2. Add a DNS `CNAME` record pointing `campground` → `seeking77degrees.github.io`
-3. Set the custom domain under Settings → Pages
+`vite.config.js` uses a relative base, so the same build works from a project-pages subpath or a custom domain without changes.
 
 ## Fonts
 
