@@ -35,6 +35,17 @@ To serve from `campground.seeking77degrees.com`:
 2. Add a DNS `CNAME` record pointing `campground` → `seeking77degrees.github.io`
 3. Set the custom domain under Settings → Pages
 
+## Fonts
+
+Bevan and Barlow Condensed are self-hosted in `src/fonts/` rather than loaded
+from Google Fonts, so the cabinet never falls back to a system serif on a
+network that blocks the CDN. Only the `latin` subset is bundled — all copy in
+the game is hardcoded ASCII. Adding copy in another script means adding the
+matching subset and `@font-face` in `src/fonts.css`.
+
 ## License
 
 Private project. Original artwork and code.
+
+The bundled fonts are third-party: Bevan and Barlow Condensed are licensed
+under the SIL Open Font License 1.1. See [`src/fonts/OFL.txt`](./src/fonts/OFL.txt).

@@ -1,0 +1,65 @@
+/* Self-hosted fonts.
+ *
+ * These used to come from fonts.googleapis.com. That meant a third-party
+ * request on every load, and any network that blocked or failed it dropped the
+ * whole cabinet to Georgia — the display type is doing real work here, so that
+ * fallback looked broken rather than plain.
+ *
+ * Only the "latin" subset is bundled: every string in the game is hardcoded
+ * ASCII, and the one non-ASCII character (the em dash in the payout message)
+ * lives in latin's U+2000-206F range. If you ever add copy that needs
+ * latin-ext, vietnamese, or another script, pull that subset from Google Fonts
+ * and add a matching @font-face here — the browser picks by unicode-range and
+ * will silently fall back otherwise.
+ *
+ * Files are imported through Vite rather than served from public/, so they get
+ * content hashes and URLs resolved relative to this stylesheet. That keeps the
+ * relative `base` in vite.config.js working from a project-pages subpath and a
+ * custom domain alike.
+ *
+ * Licensing: both families are SIL Open Font License 1.1. See fonts/OFL.txt.
+ */
+
+@font-face {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/bevan-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/barlow-condensed-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/barlow-condensed-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/barlow-condensed-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
