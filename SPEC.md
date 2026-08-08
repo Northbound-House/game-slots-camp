@@ -1,6 +1,6 @@
 # Campground — Gameplay Spec
 
-**Version 1.0 · Northbound House**
+**Version 1.0**
 Hold-and-spin campsite filler in the Cash Falls family. Visual/mechanical spec only — no RTP model, no par sheet.
 
 ---
