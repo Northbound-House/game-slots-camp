@@ -4,7 +4,7 @@ A hold-and-spin campsite filler. Campers pull into sites and stay put while the 
 
 Built with React + Vite. No backend, no state to persist — it's a toy.
 
-**Play:** https://seeking77degrees.github.io/campground/
+**Play:** https://northbound-house.github.io/game-slots-camp/
 
 ## The board
 
