@@ -6,6 +6,14 @@ Built with React + Vite. No backend, no state to persist — it's a toy.
 
 **Play:** https://northbound-house.github.io/game-slots-camp/
 
+## Where to look
+
+| File | Answers |
+| --- | --- |
+| `README.md` (this file) | How do I work on this? |
+| [`STATE.md`](STATE.md) | Where does it stand right now? |
+| [`PLAN.md`](PLAN.md) | What happens next? |
+
 ## The board
 
 Five columns, bottom-aligned, at 4 / 4 / 6 / 6 / 8 rows — 28 sites total. Short loops on the left pay small and often. The 8-row Big Rig Row on the right holds the top values and the Major and Grand jackpots, and it's deliberately hard to fill.
